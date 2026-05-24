@@ -1,0 +1,56 @@
+{
+  "name": "Settings",
+  "type": "object",
+  "properties": {
+    "institute_name": {
+      "type": "string",
+      "description": "\u09aa\u09cd\u09b0\u09a4\u09bf\u09b7\u09cd\u09a0\u09be\u09a8\u09c7\u09b0 \u09a8\u09be\u09ae"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "\u09aa\u09cd\u09b0\u09a4\u09bf\u09b7\u09cd\u09a0\u09be\u09a8\u09c7\u09b0 \u09b2\u09cb\u0997\u09cb"
+    },
+    "primary_color": {
+      "type": "string",
+      "default": "#1e3a5f",
+      "description": "\u09aa\u09cd\u09b0\u09a7\u09be\u09a8 \u09b0\u0982"
+    },
+    "secondary_color": {
+      "type": "string",
+      "default": "#d4af37",
+      "description": "\u09b8\u09c7\u0995\u09c7\u09a8\u09cd\u09a1\u09be\u09b0\u09bf \u09b0\u0982"
+    },
+    "signature_url": {
+      "type": "string",
+      "description": "\u0985\u09a5\u09b0\u09bf\u099f\u09bf\u09b0 \u09b8\u09be\u0987\u09a8 \u0987\u09ae\u09c7\u099c"
+    },
+    "authority_name": {
+      "type": "string",
+      "description": "\u0985\u09a5\u09b0\u09bf\u099f\u09bf\u09b0 \u09a8\u09be\u09ae"
+    },
+    "authority_title": {
+      "type": "string",
+      "description": "\u0985\u09a5\u09b0\u09bf\u099f\u09bf\u09b0 \u09aa\u09a6\u09ac\u09c0"
+    },
+    "certificate_heading": {
+      "type": "string",
+      "default": "\u09b8\u09be\u09b0\u09cd\u099f\u09bf\u09ab\u09bf\u0995\u09c7\u099f \u0985\u09ab \u0995\u09ae\u09aa\u09cd\u09b2\u09bf\u09b6\u09a8"
+    },
+    "address": {
+      "type": "string",
+      "description": "\u09a0\u09bf\u0995\u09be\u09a8\u09be"
+    },
+    "contact_phone": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "institute_name"
+  ]
+}

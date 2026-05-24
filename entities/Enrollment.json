@@ -1,0 +1,158 @@
+{
+  "name": "Enrollment",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "\u09b8\u09cd\u099f\u09c1\u09a1\u09c7\u09a8\u09cd\u099f \u0986\u0987\u09a1\u09bf"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "\u09b8\u09cd\u099f\u09c1\u09a1\u09c7\u09a8\u09cd\u099f \u09a8\u09be\u09ae"
+    },
+    "student_roll": {
+      "type": "string",
+      "description": "\u09b8\u09cd\u099f\u09c1\u09a1\u09c7\u09a8\u09cd\u099f \u09b0\u09cb\u09b2 \u09a8\u09be\u09ae\u09cd\u09ac\u09be\u09b0"
+    },
+    "course_id": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8 \u0986\u0987\u09a1\u09bf"
+    },
+    "course_name": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8 \u09a8\u09be\u09ae"
+    },
+    "batch_id": {
+      "type": "string",
+      "description": "\u09ac\u09cd\u09af\u09be\u099a \u0986\u0987\u09a1\u09bf"
+    },
+    "batch_number": {
+      "type": "string",
+      "description": "\u09ac\u09cd\u09af\u09be\u099a \u09a8\u09be\u09ae\u09cd\u09ac\u09be\u09b0"
+    },
+    "is_free": {
+      "type": "boolean",
+      "default": true,
+      "description": "\u09ab\u09cd\u09b0\u09bf \u0995\u09cb\u09b0\u09cd\u09b8 \u0995\u09bf\u09a8\u09be"
+    },
+    "course_price": {
+      "type": "number",
+      "default": 0,
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09ae\u09c2\u09b2\u09cd\u09af"
+    },
+    "discount_type": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "fixed"
+      ],
+      "description": "\u09a1\u09bf\u09b8\u0995\u09be\u0989\u09a8\u09cd\u099f \u099f\u09be\u0987\u09aa"
+    },
+    "discount_value": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09a1\u09bf\u09b8\u0995\u09be\u0989\u09a8\u09cd\u099f \u09ad\u09cd\u09af\u09be\u09b2\u09c1"
+    },
+    "discount_reason": {
+      "type": "string",
+      "description": "\u09a1\u09bf\u09b8\u0995\u09be\u0989\u09a8\u09cd\u099f\u09c7\u09b0 \u0995\u09be\u09b0\u09a3"
+    },
+    "discount_amount": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09ae\u09cb\u099f \u09a1\u09bf\u09b8\u0995\u09be\u0989\u09a8\u09cd\u099f \u099f\u09be\u0995\u09be"
+    },
+    "payable_amount": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09aa\u09b0\u09bf\u09b6\u09cb\u09a7\u09af\u09cb\u0997\u09cd\u09af \u099f\u09be\u0995\u09be"
+    },
+    "amount_paid": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09aa\u09b0\u09bf\u09b6\u09cb\u09a7\u09bf\u09a4 \u099f\u09be\u0995\u09be"
+    },
+    "due_amount": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09ac\u09be\u0995\u09bf \u099f\u09be\u0995\u09be"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "paid",
+        "partial",
+        "unpaid",
+        "free"
+      ],
+      "default": "free",
+      "description": "\u09aa\u09c7\u09ae\u09c7\u09a8\u09cd\u099f \u09b8\u09cd\u099f\u09cd\u09af\u09be\u099f\u09be\u09b8"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "bkash",
+        "nagad",
+        "rocket",
+        "bank",
+        "cash"
+      ],
+      "description": "\u09aa\u09c7\u09ae\u09c7\u09a8\u09cd\u099f \u09ae\u09c7\u09a5\u09a1"
+    },
+    "payment_number": {
+      "type": "string",
+      "description": "\u09aa\u09c7\u09ae\u09c7\u09a8\u09cd\u099f \u09a8\u09be\u09ae\u09cd\u09ac\u09be\u09b0"
+    },
+    "transaction_id": {
+      "type": "string",
+      "description": "\u099f\u09cd\u09b0\u09be\u09a8\u099c\u09c7\u0995\u09b6\u09a8 \u0986\u0987\u09a1\u09bf"
+    },
+    "payment_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u09aa\u09c7\u09ae\u09c7\u09a8\u09cd\u099f \u09a4\u09be\u09b0\u09bf\u0996"
+    },
+    "payment_notes": {
+      "type": "string",
+      "description": "\u09aa\u09c7\u09ae\u09c7\u09a8\u09cd\u099f \u09a8\u09cb\u099f"
+    },
+    "receipt_id": {
+      "type": "string",
+      "description": "\u09b0\u09b6\u09bf\u09a6 \u0986\u0987\u09a1\u09bf"
+    },
+    "enroll_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u09ad\u09b0\u09cd\u09a4\u09bf\u09b0 \u09a4\u09be\u09b0\u09bf\u0996"
+    },
+    "certificate_issued": {
+      "type": "boolean",
+      "default": false,
+      "description": "\u09b8\u09be\u09b0\u09cd\u099f\u09bf\u09ab\u09bf\u0995\u09c7\u099f \u0987\u09b8\u09cd\u09af\u09c1 \u09b9\u09af\u09bc\u09c7\u099b\u09c7 \u0995\u09bf\u09a8\u09be"
+    },
+    "certificate_id": {
+      "type": "string",
+      "description": "\u09b8\u09be\u09b0\u09cd\u099f\u09bf\u09ab\u09bf\u0995\u09c7\u099f \u0986\u0987\u09a1\u09bf"
+    },
+    "certificate_issue_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u09b8\u09be\u09b0\u09cd\u099f\u09bf\u09ab\u09bf\u0995\u09c7\u099f \u0987\u09b8\u09cd\u09af\u09c1 \u09a4\u09be\u09b0\u09bf\u0996"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "dropped"
+      ],
+      "default": "active",
+      "description": "\u098f\u09a8\u09b0\u09cb\u09b2\u09ae\u09c7\u09a8\u09cd\u099f \u09b8\u09cd\u099f\u09cd\u09af\u09be\u099f\u09be\u09b8"
+    }
+  },
+  "required": [
+    "student_id",
+    "course_id",
+    "batch_id"
+  ]
+}

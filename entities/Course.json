@@ -1,0 +1,60 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09a8\u09be\u09ae"
+    },
+    "is_free": {
+      "type": "boolean",
+      "default": true,
+      "description": "\u09ab\u09cd\u09b0\u09bf \u0995\u09cb\u09b0\u09cd\u09b8 \u0995\u09bf\u09a8\u09be"
+    },
+    "price": {
+      "type": "number",
+      "default": 0,
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09ae\u09c2\u09b2\u09cd\u09af (\u09aa\u09c7\u0987\u09a1 \u09b9\u09b2\u09c7)"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09b2\u09cb\u0997\u09cb"
+    },
+    "description": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09ac\u09bf\u09ac\u09b0\u09a3"
+    },
+    "total_classes": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09ae\u09cb\u099f \u0995\u09cd\u09b2\u09be\u09b8 \u09b8\u0982\u0996\u09cd\u09af\u09be"
+    },
+    "whatsapp_link": {
+      "type": "string",
+      "description": "WhatsApp \u0997\u09cd\u09b0\u09c1\u09aa \u09b2\u09bf\u0982\u0995"
+    },
+    "telegram_link": {
+      "type": "string",
+      "description": "Telegram \u0997\u09cd\u09b0\u09c1\u09aa \u09b2\u09bf\u0982\u0995"
+    },
+    "messenger_link": {
+      "type": "string",
+      "description": "Messenger \u0997\u09cd\u09b0\u09c1\u09aa \u09b2\u09bf\u0982\u0995"
+    },
+    "certificate_text": {
+      "type": "string",
+      "description": "\u09b8\u09be\u09b0\u09cd\u099f\u09bf\u09ab\u09bf\u0995\u09c7\u099f\u09c7 \u09af\u09be \u09b2\u09c7\u0996\u09be \u09a5\u09be\u0995\u09ac\u09c7"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

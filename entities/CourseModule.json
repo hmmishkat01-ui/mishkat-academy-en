@@ -1,0 +1,54 @@
+{
+  "name": "CourseModule",
+  "type": "object",
+  "properties": {
+    "course_id": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8 \u0986\u0987\u09a1\u09bf"
+    },
+    "course_name": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09a8\u09be\u09ae"
+    },
+    "class_number": {
+      "type": "number",
+      "description": "\u0995\u09cd\u09b2\u09be\u09b8 \u09a8\u09ae\u09cd\u09ac\u09b0"
+    },
+    "title": {
+      "type": "string",
+      "description": "\u09ae\u09a1\u09bf\u0989\u09b2/\u0995\u09cd\u09b2\u09be\u09b8\u09c7\u09b0 \u09b6\u09bf\u09b0\u09cb\u09a8\u09be\u09ae"
+    },
+    "description": {
+      "type": "string",
+      "description": "\u09ac\u09bf\u09b8\u09cd\u09a4\u09be\u09b0\u09bf\u09a4 \u09ac\u09bf\u09ac\u09b0\u09a3"
+    },
+    "resource_url": {
+      "type": "string",
+      "description": "\u09b0\u09bf\u09b8\u09cb\u09b0\u09cd\u09b8 \u09b2\u09bf\u0982\u0995 (\u09ad\u09bf\u09a1\u09bf\u0993/\u09ab\u09be\u0987\u09b2)"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u0995\u09cd\u09b2\u09be\u09b8\u09c7\u09b0 \u09a4\u09be\u09b0\u09bf\u0996"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "default": 60,
+      "description": "\u0995\u09cd\u09b2\u09be\u09b8\u09c7\u09b0 \u09b8\u09ae\u09af\u09bc\u0995\u09be\u09b2 (\u09ae\u09bf\u09a8\u09bf\u099f\u09c7)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "completed",
+        "cancelled"
+      ],
+      "default": "upcoming"
+    }
+  },
+  "required": [
+    "course_id",
+    "class_number",
+    "title"
+  ]
+}

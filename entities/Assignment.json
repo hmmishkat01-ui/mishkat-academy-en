@@ -1,0 +1,79 @@
+{
+  "name": "Assignment",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "\u09b8\u09cd\u099f\u09c1\u09a1\u09c7\u09a8\u09cd\u099f \u0986\u0987\u09a1\u09bf"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "\u09b8\u09cd\u099f\u09c1\u09a1\u09c7\u09a8\u09cd\u099f\u09c7\u09b0 \u09a8\u09be\u09ae"
+    },
+    "enrollment_id": {
+      "type": "string",
+      "description": "\u098f\u09a8\u09b0\u09cb\u09b2\u09ae\u09c7\u09a8\u09cd\u099f \u0986\u0987\u09a1\u09bf"
+    },
+    "course_id": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8 \u0986\u0987\u09a1\u09bf"
+    },
+    "course_name": {
+      "type": "string",
+      "description": "\u0995\u09cb\u09b0\u09cd\u09b8\u09c7\u09b0 \u09a8\u09be\u09ae"
+    },
+    "batch_id": {
+      "type": "string",
+      "description": "\u09ac\u09cd\u09af\u09be\u099a \u0986\u0987\u09a1\u09bf"
+    },
+    "class_number": {
+      "type": "number",
+      "description": "\u0995\u09a4\u09a4\u09ae \u0995\u09cd\u09b2\u09be\u09b8\u09c7\u09b0 \u0985\u09cd\u09af\u09be\u09b8\u09be\u0987\u09a8\u09ae\u09c7\u09a8\u09cd\u099f"
+    },
+    "title": {
+      "type": "string",
+      "description": "\u0985\u09cd\u09af\u09be\u09b8\u09be\u0987\u09a8\u09ae\u09c7\u09a8\u09cd\u099f\u09c7\u09b0 \u09b6\u09bf\u09b0\u09cb\u09a8\u09be\u09ae"
+    },
+    "score": {
+      "type": "number",
+      "default": 0,
+      "description": "\u09aa\u09cd\u09b0\u09be\u09aa\u09cd\u09a4 \u09a8\u09ae\u09cd\u09ac\u09b0"
+    },
+    "max_score": {
+      "type": "number",
+      "default": 10,
+      "description": "\u09b8\u09b0\u09cd\u09ac\u09cb\u099a\u09cd\u099a \u09a8\u09ae\u09cd\u09ac\u09b0"
+    },
+    "submitted_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u099c\u09ae\u09be \u09a6\u09c7\u0993\u09af\u09bc\u09be\u09b0 \u09a4\u09be\u09b0\u09bf\u0996"
+    },
+    "notes": {
+      "type": "string",
+      "description": "\u09ae\u09a8\u09cd\u09a4\u09ac\u09cd\u09af"
+    },
+    "image_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "\u0985\u09cd\u09af\u09be\u09b8\u09be\u0987\u09a8\u09ae\u09c7\u09a8\u09cd\u099f\u09c7\u09b0 \u099b\u09ac\u09bf URL\u0997\u09c1\u09b2\u09cb"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "submitted",
+        "graded",
+        "late",
+        "missing"
+      ],
+      "default": "submitted"
+    }
+  },
+  "required": [
+    "student_id",
+    "course_id",
+    "class_number"
+  ]
+}
